@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div id="audience" class="container">
+            <h3>Auditorio</h3>
+
+            <section class="container__table" id="audience__table"> </section>
+
+            <section class="container__form">
+                <label for="audience__txtfield--id">Id:
+                    <input type="number" name="" id="audience__txtfield--id" required>
+                </label>
+
+                <label for="audience__txtfield--owner">Propietario:
+                    <input type="text" name="" id="audience__txtfield--owner" required>
+                </label>
+
+                <label for="audience__txtfield--capacity">Capacidad:
+                    <input type="number" name="" id="audience__txtfield--capacity" required>
+                </label>
+
+                <label for="audience__txtfield--category-id">Categoria-id:
+                    <input type="number" name="" id="audience__txtfield--category-id" required>
+                </label>
+
+                <label for="audience__txtfield--name">Nombre:
+                    <input type="text" name="" id="audience__txtfield--name" required>
+                </label>
+
+            </section>
+
+            <section class="container__buttons">
+                <button id="audience__btn--get"> Mostrar </button>
+                <button id="audience__btn--post"> Crear </button>
+                <button id="audience__btn--put"> Actualizar </button>
+                <button id="audience__btn--delete"> Borrar </button>
+            </section>
+            
+        </div>
+        <div id="client" class="container">
+            <h3>Cliente</h3>
+
+            <section class="container__table" id="client__table"></section>
+
+            <section class="container__form">
+                <label for="client__txtfield--id">Id: 
+                    <input type="number" id="client__txtfield--id">
+                </label>
+
+                <label for="client__txtfield--name">Nombre: 
+                    <input type="text" id="client__txtfield--name">
+                </label>
+
+                <label for="client__txtfield--email">Email: 
+                    <input type="email" id="client__txtfield--email">
+                </label>
+
+                <label for="client__txtfield--id">Age: 
+                    <input type="number" id="client__txtfield--age">
+                </label>
+            </section>
+
+            <section class="container__buttons">
+                <button id="client__btn--get"> Mostrar </button>
+                <button id="client__btn--post"> Crear </button>
+                <button id="client__btn--put"> Actualizar </button>
+                <button id="client__btn--delete"> Borrar </button>
+            </section>
+        </div>
+        <div id="message" class="container">
+            <h3>Mensaje</h3>
+
+            <section class="container__table" id="message__table"></section>
+
+            <section class="container__form">
+                <label for="message__txtfield--id">Id: 
+                    <input type="number" id="message__txtfield--id">
+                </label>
+
+                <label for="message__txtfield--message">Mensaje: 
+                    <input type="text" id="message__txtfield--text-message">
+                </label>
+            </section>
+
+            <section class="container__buttons">
+                <button id="message__btn--get"> Mostrar </button>
+                <button id="message__btn--post"> Crear </button>
+                <button id="message__btn--put"> Actualizar </button>
+                <button id="message__btn--delete"> Borrar </button>
+            </section>
+        </div>
+    </main>
+    <script src="./js/scriptHome.js"></script>
+</body>
+</html>
